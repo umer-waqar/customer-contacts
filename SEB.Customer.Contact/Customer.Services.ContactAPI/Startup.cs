@@ -1,5 +1,6 @@
 using AutoMapper;
 using Customer.Services.ContactAPI.DbContexts;
+using Customer.Services.ContactAPI.Repository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -35,6 +36,7 @@ namespace Customer.Services.ContactAPI
             IMapper mapper = MappingConfig.RegisterMaps().CreateMapper();
             services.AddSingleton(mapper);
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+            services.AddScoped<IContactRepository, ContactRespository>();
 
             services.AddControllers();
             services.AddSwaggerGen(c =>
