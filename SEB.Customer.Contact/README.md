@@ -32,3 +32,6 @@ Update-Database
 Create Gateway Project and Install nugets package Ocelot 
 
 Register Ocelot in Startup Class 
+
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HMHP2I5KCES5:00000001, previousRequestId: no previous request id, message: 200 (OK) status code, request uri: https://localhost:44340/api/contacts
