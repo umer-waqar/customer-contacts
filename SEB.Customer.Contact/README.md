@@ -23,3 +23,7 @@ Add-Migration AddContactModelToDb
 Update-Database
 
 Implement API for Contact => Repository, Services, Controller and Response
+
+Seed Contacts and add some data into the table 
+Add-Migration SeedContacts
+Update-Database
