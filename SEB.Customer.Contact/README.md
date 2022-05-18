@@ -30,3 +30,5 @@ Update-Database
 
 
 Create Gateway Project and Install nugets package Ocelot 
+
+Register Ocelot in Startup Class 
