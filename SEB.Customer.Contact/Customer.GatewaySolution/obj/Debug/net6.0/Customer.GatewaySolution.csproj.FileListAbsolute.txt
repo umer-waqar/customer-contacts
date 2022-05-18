@@ -19,3 +19,15 @@ C:\Assignments\customer-contacts\SEB.Customer.Contact\Customer.GatewaySolution\o
 C:\Assignments\customer-contacts\SEB.Customer.Contact\Customer.GatewaySolution\obj\Debug\net6.0\Customer.GatewaySolution.pdb
 C:\Assignments\customer-contacts\SEB.Customer.Contact\Customer.GatewaySolution\obj\Debug\net6.0\Customer.GatewaySolution.genruntimeconfig.cache
 C:\Assignments\customer-contacts\SEB.Customer.Contact\Customer.GatewaySolution\obj\Debug\net6.0\ref\Customer.GatewaySolution.dll
+C:\Assignments\customer-contacts\SEB.Customer.Contact\Customer.GatewaySolution\bin\Debug\net6.0\FluentValidation.dll
+C:\Assignments\customer-contacts\SEB.Customer.Contact\Customer.GatewaySolution\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Assignments\customer-contacts\SEB.Customer.Contact\Customer.GatewaySolution\bin\Debug\net6.0\Microsoft.AspNetCore.MiddlewareAnalysis.dll
+C:\Assignments\customer-contacts\SEB.Customer.Contact\Customer.GatewaySolution\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Assignments\customer-contacts\SEB.Customer.Contact\Customer.GatewaySolution\bin\Debug\net6.0\Microsoft.Extensions.DiagnosticAdapter.dll
+C:\Assignments\customer-contacts\SEB.Customer.Contact\Customer.GatewaySolution\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Assignments\customer-contacts\SEB.Customer.Contact\Customer.GatewaySolution\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+C:\Assignments\customer-contacts\SEB.Customer.Contact\Customer.GatewaySolution\bin\Debug\net6.0\Ocelot.dll
+C:\Assignments\customer-contacts\SEB.Customer.Contact\Customer.GatewaySolution\obj\Debug\net6.0\Customer.GatewaySolution.Properties.Resources.resources
+C:\Assignments\customer-contacts\SEB.Customer.Contact\Customer.GatewaySolution\obj\Debug\net6.0\Customer.GatewaySolution.csproj.GenerateResource.cache
+C:\Assignments\customer-contacts\SEB.Customer.Contact\Customer.GatewaySolution\obj\Debug\net6.0\Customer.GatewaySolution.MvcApplicationPartsAssemblyInfo.cs
+C:\Assignments\customer-contacts\SEB.Customer.Contact\Customer.GatewaySolution\obj\Debug\net6.0\Customer.GatewaySolution.csproj.CopyComplete
