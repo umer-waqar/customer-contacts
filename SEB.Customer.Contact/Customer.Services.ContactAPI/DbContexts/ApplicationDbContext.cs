@@ -10,6 +10,6 @@ namespace Customer.Services.ContactAPI.DbContexts
 
         }
 
-        public DbSet<Contact> Contacts { get; set; }
+        public DbSet<Contact> Contacts { get; set; }        
     }
 }
