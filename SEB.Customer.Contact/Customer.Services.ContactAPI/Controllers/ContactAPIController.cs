@@ -2,7 +2,6 @@
 using Customer.Services.ContactAPI.Repository;
 using Microsoft.AspNetCore.Mvc;
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
@@ -81,7 +80,7 @@ namespace Customer.Services.ContactAPI.Controllers
             return _response;
         }
 
-        [HttpDelete]
+        [HttpDelete("{id}")]        
         public async Task<object> DeleteAsync(int id)
         {
             try
