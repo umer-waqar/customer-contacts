@@ -9,12 +9,14 @@ C:\Assignments\customer-contacts\SEB.Customer.Contact\Customer.Services.ContactA
 C:\Assignments\customer-contacts\SEB.Customer.Contact\Customer.Services.ContactAPI\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Assignments\customer-contacts\SEB.Customer.Contact\Customer.Services.ContactAPI\bin\Debug\net6.0\Humanizer.dll
 C:\Assignments\customer-contacts\SEB.Customer.Contact\Customer.Services.ContactAPI\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+C:\Assignments\customer-contacts\SEB.Customer.Contact\Customer.Services.ContactAPI\bin\Debug\net6.0\Microsoft.DotNet.PlatformAbstractions.dll
 C:\Assignments\customer-contacts\SEB.Customer.Contact\Customer.Services.ContactAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
 C:\Assignments\customer-contacts\SEB.Customer.Contact\Customer.Services.ContactAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
 C:\Assignments\customer-contacts\SEB.Customer.Contact\Customer.Services.ContactAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
 C:\Assignments\customer-contacts\SEB.Customer.Contact\Customer.Services.ContactAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Assignments\customer-contacts\SEB.Customer.Contact\Customer.Services.ContactAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
 C:\Assignments\customer-contacts\SEB.Customer.Contact\Customer.Services.ContactAPI\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Assignments\customer-contacts\SEB.Customer.Contact\Customer.Services.ContactAPI\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
 C:\Assignments\customer-contacts\SEB.Customer.Contact\Customer.Services.ContactAPI\bin\Debug\net6.0\Microsoft.Identity.Client.dll
 C:\Assignments\customer-contacts\SEB.Customer.Contact\Customer.Services.ContactAPI\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
 C:\Assignments\customer-contacts\SEB.Customer.Contact\Customer.Services.ContactAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
@@ -23,6 +25,7 @@ C:\Assignments\customer-contacts\SEB.Customer.Contact\Customer.Services.ContactA
 C:\Assignments\customer-contacts\SEB.Customer.Contact\Customer.Services.ContactAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
 C:\Assignments\customer-contacts\SEB.Customer.Contact\Customer.Services.ContactAPI\bin\Debug\net6.0\Microsoft.OpenApi.dll
 C:\Assignments\customer-contacts\SEB.Customer.Contact\Customer.Services.ContactAPI\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Assignments\customer-contacts\SEB.Customer.Contact\Customer.Services.ContactAPI\bin\Debug\net6.0\Newtonsoft.Json.dll
 C:\Assignments\customer-contacts\SEB.Customer.Contact\Customer.Services.ContactAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.Annotations.dll
 C:\Assignments\customer-contacts\SEB.Customer.Contact\Customer.Services.ContactAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Assignments\customer-contacts\SEB.Customer.Contact\Customer.Services.ContactAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
@@ -62,3 +65,10 @@ C:\Assignments\customer-contacts\SEB.Customer.Contact\Customer.Services.ContactA
 C:\Assignments\customer-contacts\SEB.Customer.Contact\Customer.Services.ContactAPI\obj\Debug\net6.0\Customer.Services.ContactAPI.pdb
 C:\Assignments\customer-contacts\SEB.Customer.Contact\Customer.Services.ContactAPI\obj\Debug\net6.0\Customer.Services.ContactAPI.genruntimeconfig.cache
 C:\Assignments\customer-contacts\SEB.Customer.Contact\Customer.Services.ContactAPI\obj\Debug\net6.0\ref\Customer.Services.ContactAPI.dll
+C:\Assignments\customer-contacts\SEB.Customer.Contact\Customer.Services.ContactAPI\bin\Debug\net6.0\System.Web.Mvc.dll
+C:\Assignments\customer-contacts\SEB.Customer.Contact\Customer.Services.ContactAPI\bin\Debug\net6.0\System.Web.Razor.dll
+C:\Assignments\customer-contacts\SEB.Customer.Contact\Customer.Services.ContactAPI\bin\Debug\net6.0\System.Web.Helpers.dll
+C:\Assignments\customer-contacts\SEB.Customer.Contact\Customer.Services.ContactAPI\bin\Debug\net6.0\System.Web.WebPages.Deployment.dll
+C:\Assignments\customer-contacts\SEB.Customer.Contact\Customer.Services.ContactAPI\bin\Debug\net6.0\System.Web.WebPages.Razor.dll
+C:\Assignments\customer-contacts\SEB.Customer.Contact\Customer.Services.ContactAPI\bin\Debug\net6.0\System.Web.WebPages.dll
+C:\Assignments\customer-contacts\SEB.Customer.Contact\Customer.Services.ContactAPI\bin\Debug\net6.0\Microsoft.Web.Infrastructure.dll

@@ -15,6 +15,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Web.Mvc;
 
 namespace Customer.Services.ContactAPI
 {
@@ -33,10 +34,13 @@ namespace Customer.Services.ContactAPI
             services.AddDbContext<ApplicationDbContext>(options => 
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
+            services.AddMvcCore().AddDataAnnotations();
+
             IMapper mapper = MappingConfig.RegisterMaps().CreateMapper();
             services.AddSingleton(mapper);
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
             services.AddScoped<IContactRepository, ContactRespository>();
+            
 
             services.AddControllers();
             services.AddSwaggerGen(c =>
@@ -58,7 +62,7 @@ namespace Customer.Services.ContactAPI
             app.UseHttpsRedirection();
 
             app.UseRouting();
-
+            
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

@@ -3,6 +3,7 @@ using Customer.Services.ContactAPI.Repository;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace Customer.Services.ContactAPI.Controllers
@@ -55,7 +56,18 @@ namespace Customer.Services.ContactAPI.Controllers
         {
             try
             {
-                _response.Result = await _contactRepository.CreateUpdateContact(contactDto);
+                if (ModelState.IsValid)
+                {
+                    _response.Result = await _contactRepository.CreateUpdateContact(contactDto);
+                }
+                else
+                {
+                    _response.IsSuccess = false;                   
+                    var errorMessages = ModelState.Values
+                                        .SelectMany(x => x.Errors)
+                                        .Select(x => x.ErrorMessage);
+                    _response.ErrorMessages = errorMessages.ToList();  
+                }                
             }
             catch (Exception ex)
             {
@@ -70,7 +82,18 @@ namespace Customer.Services.ContactAPI.Controllers
         {
             try
             {
-                _response.Result = await _contactRepository.CreateUpdateContact(contactDto);
+                if (ModelState.IsValid)
+                {
+                    _response.Result = await _contactRepository.CreateUpdateContact(contactDto);
+                }
+                else
+                {
+                    _response.IsSuccess = false;
+                    var errorMessages = ModelState.Values
+                                        .SelectMany(x => x.Errors)
+                                        .Select(x => x.ErrorMessage);
+                    _response.ErrorMessages = errorMessages.ToList();
+                }
             }
             catch (Exception ex)
             {

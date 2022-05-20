@@ -2,6 +2,7 @@
 using Customer.Services.ContactAPI.DbContexts;
 using Customer.Services.ContactAPI.Models;
 using Customer.Services.ContactAPI.Models.Dto;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
