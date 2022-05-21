@@ -57,3 +57,9 @@ Cleanup and refactoring. App Done! Moving forward with dockerfile.
 
 Gateway Url : https://localhost:5050
 Service API Url : https://localhost:44340
+
+
+Add Dockerfile by following the instruction from the Url
+https://code.visualstudio.com/docs/containers/quickstart-aspnet-core
+
+I am not confident with dockerfile. Need some improvements.
