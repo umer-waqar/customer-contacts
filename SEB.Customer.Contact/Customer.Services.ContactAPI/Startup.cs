@@ -3,19 +3,12 @@ using Customer.Services.ContactAPI.DbContexts;
 using Customer.Services.ContactAPI.Repository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Web.Mvc;
 
 namespace Customer.Services.ContactAPI
 {
@@ -39,13 +32,12 @@ namespace Customer.Services.ContactAPI
             IMapper mapper = MappingConfig.RegisterMaps().CreateMapper();
             services.AddSingleton(mapper);
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
-            services.AddScoped<IContactRepository, ContactRespository>();
-            
+            services.AddScoped<IContactRepository, ContactRespository>();            
 
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Customer.Services.ContactAPI", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Customer Contact API", Version = "v1" });
             });
         }
 

@@ -2,7 +2,6 @@
 using Customer.Services.ContactAPI.DbContexts;
 using Customer.Services.ContactAPI.Models;
 using Customer.Services.ContactAPI.Models.Dto;
-using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -23,7 +22,7 @@ namespace Customer.Services.ContactAPI.Repository
         public async Task<ContactDto> CreateUpdateContact(ContactDto contactDto)
         {
             Contact contact = _mapper.Map<ContactDto, Contact>(contactDto);
-            if (contact.Id > 0)
+            if (contact.Id > 0)  //If Id provided then Update function will be executed.
             {
                 _db.Contacts.Update(contact);
             }
@@ -52,7 +51,6 @@ namespace Customer.Services.ContactAPI.Repository
             {
                 return false;
             }
-
         }
 
         public async Task<ContactDto> GetContactById(int contactId)

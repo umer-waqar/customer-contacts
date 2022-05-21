@@ -5,13 +5,14 @@ namespace Customer.Services.ContactAPI.DbContexts
 {
     public class ApplicationDbContext : DbContext
     {
+        public DbSet<Contact> Contacts { get; set; }
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options): base(options)
         {
 
         }
 
-        public DbSet<Contact> Contacts { get; set; }        
 
+        //Create and store sample Data for testing purpose
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);

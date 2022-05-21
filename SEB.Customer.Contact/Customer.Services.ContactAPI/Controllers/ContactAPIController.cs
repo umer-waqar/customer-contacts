@@ -13,7 +13,6 @@ namespace Customer.Services.ContactAPI.Controllers
     {
         protected ResponseDto _response;
         private IContactRepository _contactRepository;
-
         public ContactAPIController(IContactRepository contactRepository)
         {
             _contactRepository = contactRepository;
@@ -21,7 +20,7 @@ namespace Customer.Services.ContactAPI.Controllers
         }
 
         [HttpGet]
-        public async Task<object> GetAsync()
+        public async Task<object> GetsAsync()
         {
             try
             {
@@ -35,8 +34,7 @@ namespace Customer.Services.ContactAPI.Controllers
             return _response;
         }
 
-        [HttpGet]
-        [Route("{id}")]
+        [HttpGet("{id}")]
         public async Task<object> GetAsync(int id)
         {
             try
@@ -56,18 +54,29 @@ namespace Customer.Services.ContactAPI.Controllers
         {
             try
             {
+                //Validate the input fields. Personal Number, Email Adddress and Phone Number
                 if (ModelState.IsValid)
                 {
-                    _response.Result = await _contactRepository.CreateUpdateContact(contactDto);
+                    //Unique Personal Number
+                    var isPerNumExists = (await _contactRepository.GetContacts()).Any(x => string.Equals(x.PersonalNumber, contactDto.PersonalNumber, StringComparison.OrdinalIgnoreCase));
+                    if (!isPerNumExists)
+                    {
+                        _response.Result = await _contactRepository.CreateUpdateContact(contactDto);
+                    }
+                    else
+                    {
+                        _response.IsSuccess = false;
+                        _response.ErrorMessages = new List<string>() { "Your contact information already registered!" };
+                    }
                 }
                 else
                 {
-                    _response.IsSuccess = false;                   
+                    _response.IsSuccess = false;
                     var errorMessages = ModelState.Values
                                         .SelectMany(x => x.Errors)
                                         .Select(x => x.ErrorMessage);
-                    _response.ErrorMessages = errorMessages.ToList();  
-                }                
+                    _response.ErrorMessages = errorMessages.ToList();
+                }
             }
             catch (Exception ex)
             {
@@ -82,6 +91,7 @@ namespace Customer.Services.ContactAPI.Controllers
         {
             try
             {
+                //Validate the input fields. Personal Number, Email and Phone
                 if (ModelState.IsValid)
                 {
                     _response.Result = await _contactRepository.CreateUpdateContact(contactDto);

@@ -1,6 +1,5 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
-using System.Globalization;
 
 namespace Customer.Services.ContactAPI.Validation
 {
@@ -13,18 +12,16 @@ namespace Customer.Services.ContactAPI.Validation
         }
         public override bool IsValid(object value)
         {
-            if (value != null)
+            if (value == null) return true;
+            if (value.ToString().Length == 12)  //User provide input with 12 character then personal number start with 19 or 20
             {
-                if (value.ToString().Length == 12)
-                {
-                    return value.ToString().StartsWith("19") || value.ToString().StartsWith("20");
-                }
-                if (value.ToString().Length == 10)
-                {
-                    return true;
-                }
+                return value.ToString().StartsWith("19") || value.ToString().StartsWith("20");
+            }
+            if (value.ToString().Length == 10)
+            {
+                return true;
             }
             return false;
-        }      
+        }
     }
 }
